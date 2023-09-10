@@ -6,3 +6,4 @@ export interface IUserRepositoryInterface {
 
     createdUser(user: IUser): Promise<IUser>;
 }
+

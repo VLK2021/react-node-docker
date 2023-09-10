@@ -1,8 +1,8 @@
+import bcrypt from 'bcrypt';
+
+import {config} from "../config";
 import {IUser} from "../entity";
 import {userRepository} from "../repositiries/users/userRepository";
-
-import bcrypt from 'bcrypt';
-import {config} from "../config";
 
 
 class UserService {
@@ -23,3 +23,6 @@ class UserService {
     }
 }
 export const userService = new UserService();
+
+
+

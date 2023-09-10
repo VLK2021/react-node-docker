@@ -1,7 +1,8 @@
-import { EntityRepository, getManager, Repository } from 'typeorm';
+import {EntityRepository, getManager, Repository} from "typeorm";
 
-import { IUser, User } from '../../entity';
+import {User, IUser} from "../../entity";
 import {IUserRepositoryInterface} from "./userRepository.interface";
+
 
 
 @EntityRepository(User)
@@ -17,3 +18,5 @@ class UserRepository extends Repository<User> implements IUserRepositoryInterfac
 
 }
 export const userRepository = new UserRepository();
+
+
