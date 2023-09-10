@@ -4,6 +4,7 @@ import 'dotenv/config';
 import cors from 'cors';
 import {createConnection} from "typeorm";
 
+
 import {config} from "./config";
 import {maineRouter} from "./routes/mainRouter";
 
@@ -20,6 +21,7 @@ app.use(cors());
 
 
 app.use(maineRouter);
+
 
 
 
