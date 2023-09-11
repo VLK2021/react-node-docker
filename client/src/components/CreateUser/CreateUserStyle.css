@@ -1,5 +1,14 @@
-.createUser{
+.createUser {
     width: 100%;
     font-size: 2rem;
     color: blue;
+}
+
+label {
+    display: block;
+    text-align: start;
+}
+
+input{
+    margin-left: 0.5rem;
 }

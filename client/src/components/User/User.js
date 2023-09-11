@@ -3,10 +3,13 @@ import React from 'react';
 import './UserStyle.css';
 
 
-const User = () => {
+const User = ({user}) => {
+    const {id, firstName, secondName, age, city, phone, email, password} = user;
+
+
     return (
         <div className={'user'}>
-            User
+            {id}) {firstName} - {secondName} - {age} - {city}
         </div>
     );
 };

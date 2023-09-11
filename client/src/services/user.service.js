@@ -3,7 +3,7 @@ import {urls} from "../constants";
 
 
 const userService = {
-    getAll: () => axiosService.get(urls.users),
+    getAll: () => axiosService.get(urls.users).then(value => value.data),
     create: (user) => axiosService.post(urls.create, user)
 }
 
