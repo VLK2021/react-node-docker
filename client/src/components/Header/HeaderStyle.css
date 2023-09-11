@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+    background: black;
+    padding: 0.5rem;
+    color: snow;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.active{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: snow;
+}

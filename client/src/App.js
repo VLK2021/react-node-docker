@@ -1,19 +1,21 @@
+import {Routes, Route} from 'react-router-dom';
+
 import './App.css';
-import {useEffect, useState} from "react";
+import {Layout} from "./Layout";
+import {CreateUser, Home, Users} from "./components";
 
 
 function App() {
-    const [users, setUsers] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost/api/users')
-            .then(response => response.json())
-            .then(val => setUsers(val))
-    }, []);
 
   return (
     <div className="App">
-      hello from app!!!!!!!
+        <Routes>
+            <Route path={'/'} element={<Layout/>}>
+                <Route index element={<Home/>}/>
+                <Route path={'users'} element={<Users/>}/>
+                <Route path={'create-user'} element={<CreateUser/>}/>
+            </Route>
+        </Routes>
     </div>
   );
 }
