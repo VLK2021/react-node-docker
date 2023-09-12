@@ -10,6 +10,7 @@ const User = ({user}) => {
     return (
         <div className={'user'}>
             {id}) {firstName} - {secondName} - {age} - {city}
+            <button>delete</button>
         </div>
     );
 };
